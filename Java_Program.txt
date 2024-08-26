@@ -1,0 +1,316 @@
+// Check Odd or Even
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter a number");
+int num=sc.nextInt();
+sc.close();
+if(num%2==0) {
+System.out.println("The number is Even");
+
+}else {
+System.out.println("The number is Odd");
+
+	}
+		
+	}
+		
+	}
+
+
+
+
+// Print Odd Number from 1 to 10
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number");
+		int num=sc.nextInt();
+		sc.close();
+		for(int i=1;i<=num;i++) {
+		if(i%2!=0) {
+			System.out.println(i);
+
+		}}
+
+		}
+		
+	}
+		
+
+// Print Odd Number from 1 to 100
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number");
+		int num=sc.nextInt();
+		sc.close();
+		int count=0;
+		for(int i=1;i<=num;i++) {
+		if(i%2!=0) {
+			count++;
+		}}
+			System.out.println(count);
+
+		}
+		
+	}
+		
+// Print Odd sum from 1 to 80
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number");
+		int num=sc.nextInt();
+		sc.close();
+		int sum=0;
+		for(int i=1;i<=num;i++) {
+		if(i%2!=0) {
+			sum+=i;
+		}}
+			System.out.println(sum);
+
+		}
+		
+	}
+		
+	// Reverse the number
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number");
+		int num=sc.nextInt();
+		sc.close();
+		int rev=0;
+		while(num!=0) {
+			rev=rev*10+num%10;
+			num/=10;
+			
+		}
+		System.out.println(rev);
+
+		}
+		
+	}
+
+//  the number is palindrome or not 
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number");
+		int num=sc.nextInt();
+		sc.close();
+		int temp=num;
+		int rev=0;
+		while(num!=0) {
+			rev=rev*10+num%10;
+			num/=10;
+			
+		}
+		System.out.println(rev);
+		if(rev==temp) {
+			System.out.println("The no is palindrome");
+
+		}else {
+			System.out.println("The no is not  palindrome");
+
+		}
+
+		}
+		
+	}
+		
+
+
+
+// Count number of digit
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number");
+		int num=sc.nextInt();
+		sc.close();
+		int count=0;
+		while(num!=0) {
+		count++;
+		num/=10;
+		}
+	
+		System.out.println(count);
+
+		}
+		
+	}
+		
+	
+// Sum of digits
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number");
+		int num=sc.nextInt();
+		sc.close();
+		int sum=0;
+		while(num!=0) {
+		int n=num%10;
+		sum=sum+n;
+		num/=10;
+			
+		}
+		System.out.println(sum);
+		
+	}}
+
+
+// Swap number with 3rd number
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number1");
+		int num=sc.nextInt();
+		System.out.println("Enter a number2");
+		int num2=sc.nextInt();
+        sc.close();
+        System.out.println("The number before swap"+" "+num+" "+num2);
+        int temp=num;
+        num=num2;
+        num2=temp;
+        System.out.println("The number After swap"+" "+num+" "+num2);
+
+		
+	}}
+		
+// Swap number without 3rd number
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number1");
+		int num=sc.nextInt();
+		System.out.println("Enter a number2");
+		int num2=sc.nextInt();
+        sc.close();
+        System.out.println("The number before swap"+" "+num+" "+num2);
+        num=num*num2;
+        num2=num/num2;
+        num=num/num2;
+        System.out.println("The number After swap"+" "+num+" "+num2);
+
+		
+	}}
+		
+	
+// Swap number without 3rd number
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number1");
+		int num=sc.nextInt();
+		System.out.println("Enter a number2");
+		int num2=sc.nextInt();
+        sc.close();
+        System.out.println("The number before swap"+" "+num+" "+num2);
+        num=num+num2;
+        num2=num-num2;
+        num=num-num2;
+        System.out.println("The number After swap"+" "+num+" "+num2);
+
+		
+	}}
+		
+	
+// Factorial of a number 
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number1");
+		int num=sc.nextInt();
+        sc.close();
+   int factorial=1;
+   for(int i=1;i<=num;i++) {
+	   factorial=factorial*i;
+   }
+   System.out.println(factorial);
+ 
+		
+	}}
+		
+
+
+// Check the number is prime number or not
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number1");
+		int num=sc.nextInt();
+        sc.close();
+   int count=0;
+   for(int i=2;i<=num/2;i++) {
+	  if(num%i==0) {
+		 count++;
+	  }}
+	  if(count==0) {
+	 System.out.println("The number is prime number");
+	  }	else {
+		  System.out.println("The number is not prime number");
+	  }
+
+   }
+ 
+		
+	}
+		
+		
+	
+	
