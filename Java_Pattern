@@ -1,1 +1,708 @@
+// Square Hollow Pattern
 
+
+********
+*      *
+*      *
+*      *
+*      *
+*      *
+*      *
+********
+
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		int a=0; int b=1;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number1");
+		int num=sc.nextInt();
+        sc.close();
+   
+        for(int i=1;i<=num;i++) {
+        for(int j=1;j<=num;j++) {
+        if(i==1 || j==1 || i==num || j==num) {
+        System.out.print("*");
+        }else {
+        System.out.print(" ");
+        }
+        }
+        System.out.println();
+   }
+	}}
+		
+	
+		
+// Number triangle pattern
+
+     1 
+    2 2 
+   3 3 3 
+  4 4 4 4 
+ 5 5 5 5 5 
+6 6 6 6 6 6 
+
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number1");
+		int num=sc.nextInt();
+        sc.close();
+   
+        for(int i=1;i<=num;i++) {
+        for(int j=1;j<=num-i;j++) {
+        System.out.print(" ");
+        }
+        for(int j=1;j<=i;j++) {
+        System.out.print(i+" ");
+        
+        }
+        System.out.println();
+   }
+	}}
+		
+
+
+// Number increasing pyramid pattern
+
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5 
+1 2 3 4 5 6 
+
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number1");
+		int num=sc.nextInt();
+        sc.close();
+   
+        for(int i=1;i<=num;i++) {
+        for(int j=1;j<=i;j++) {
+        System.out.print(j+" ");
+        
+        }
+        System.out.println();
+   }
+	}}
+		
+
+
+
+// Number increasing reverse pyramid pattern
+
+
+1 2 3 4 5 6 
+1 2 3 4 5 
+1 2 3 4 
+1 2 3 
+1 2 
+1 
+
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		int count=1;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number1");
+		int num=sc.nextInt();
+        sc.close();
+   
+        for(int i=num;i>=1;i--) {
+        for(int j=1;j<=i;j++) {
+        System.out.print(j+" ");
+        count++;
+        }
+        System.out.println();
+   }
+	}}
+
+
+
+// Number-Changing pyramid pattern
+
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+11 12 13 14 15 
+16 17 18 19 20 21 
+
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		int count=1;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number1");
+		int num=sc.nextInt();
+        sc.close();
+   
+        for(int i=1;i<=num;i++) {
+        for(int j=1;j<=i;j++) {
+        System.out.print(count+" ");
+        count++;
+        
+        }
+        System.out.println();
+   }
+	}}
+
+
+// Zero-one triangle pattern
+
+1
+01
+101
+0101
+10101
+010101
+
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number1");
+		int num=sc.nextInt();
+        sc.close();
+   
+        for(int i=1;i<=num;i++) {
+        for(int j=1;j<=i;j++) {
+        int sum=i+j;
+        if(sum%2==0) {
+        System.out.print("1");
+        }else {
+        	System.out.print("0");
+        }}
+        System.out.println();
+   }}
+	}
+
+// Palindrome triangle pattern
+
+     1
+    212
+   32123
+  4321234
+ 543212345
+65432123456
+
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number1");
+		int num=sc.nextInt();
+        sc.close();
+   
+        for(int i=1;i<=num;i++) {
+        for(int j=1;j<=num-i;j++) {
+        System.out.print(" ");
+        }
+        for(int j=i;j>=1;j--) {
+        	System.out.print(j);
+        }
+        for(int j=2;j<=i;j++) {
+        	System.out.print(j);
+        }
+        System.out.println();
+   }}}
+	
+   // Rhomus triangle pattern
+
+     ******
+    ******
+   ******
+  ******
+ ******
+******
+
+
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number1");
+		int num=sc.nextInt();
+        sc.close();
+   
+        for(int i=1;i<=num;i++) {
+        for(int j=1;j<=num-i;j++) {
+        System.out.print(" ");
+        }
+        for(int j=1;j<=num;j++) {
+        	System.out.print("*");
+        }
+        System.out.println();
+   }}}
+	
+// Diamand star pattern
+
+     *
+    ***
+   *****
+  *******
+ *********
+***********
+ *********
+  *******
+   *****
+    ***
+     *
+	
+	
+		
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number1");
+		int num=sc.nextInt();
+        sc.close();
+   
+        for(int i=1;i<=num;i++) {
+        for(int j=1;j<=num-i;j++) {
+        System.out.print(" ");
+        }
+        for(int j=1;j<=2*i-1;j++) {
+        	System.out.print("*");
+        }
+        System.out.println();
+        }
+        for(int i=num-1;i>=1;i--) {
+            for(int j=1;j<=num-i;j++) {
+            System.out.print(" ");
+            }
+            for(int j=1;j<=2*i-1;j++) {
+            	System.out.print("*");
+            }
+        System.out.println();
+   }}}
+
+	
+
+
+// Butterfly star pattern
+
+*          *
+**        **
+***      ***
+****    ****
+*****  *****
+************
+************
+*****  *****
+****    ****
+***      ***
+**        **
+*          *
+
+
+
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number1");
+		int num=sc.nextInt();
+        sc.close();
+   
+        for(int i=1;i<=num;i++) {
+        
+        for(int j=1;j<=i;j++) {
+        	System.out.print("*");
+        }
+        for(int j=1;j<=num-i;j++) {
+        System.out.print(" ");
+        }
+        for(int j=1;j<=num-i;j++) {
+        System.out.print(" ");
+        }
+        for(int j=1;j<=i;j++) {
+        	System.out.print("*");
+        }
+        System.out.println();
+
+        }
+        for(int i=num;i>=1;i--) {
+            
+            for(int j=1;j<=i;j++) {
+            	System.out.print("*");
+            }
+            for(int j=1;j<=num-i;j++) {
+            System.out.print(" ");
+            }
+            for(int j=1;j<=num-i;j++) {
+            System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++) {
+            	System.out.print("*");
+            }
+
+        System.out.println();
+           }}}
+		
+	
+// Square fill star pattern
+		
+******
+******
+******
+******
+******
+******
+
+
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number1");
+		int num=sc.nextInt();
+        sc.close();
+   
+        for(int i=1;i<=num;i++) {
+        
+        for(int j=1;j<=num;j++) {
+        	System.out.print("*");
+        }
+        
+           System.out.println();
+           }}}
+
+
+// Right half pyramid pattern
+
+*
+**
+***
+****
+*****
+******
+
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number1");
+		int num=sc.nextInt();
+        sc.close();
+   
+        for(int i=1;i<=num;i++) {
+        
+        for(int j=1;j<=i;j++) {
+        	System.out.print("*");
+        }
+        
+           System.out.println();
+           }}}
+
+// Reverse Right half pyramid pattern
+
+
+******
+*****
+****
+***
+**
+*
+
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number1");
+		int num=sc.nextInt();
+        sc.close();
+   
+        for(int i=num;i>=1;i--) {
+        
+        for(int j=1;j<=i;j++) {
+        	System.out.print("*");
+        }
+        
+           System.out.println();
+           }}}
+
+
+// Left half pyramid pattern
+
+
+     *
+    ***
+   *****
+  *******
+ *********
+***********
+
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number1");
+		int num=sc.nextInt();
+        sc.close();
+   
+        for(int i=1;i<=num;i++) {
+        
+        for(int j=1;j<=num-i;j++) {
+        	System.out.print(" ");
+        }
+        for(int j=1;j<=2*i-1;j++) {
+        	System.out.print("*");
+	
+        }
+        
+           System.out.println();
+           }}}
+
+
+
+// Reverse Left half pyramid pattern
+
+***********
+ *********
+  *******
+   *****
+    ***
+     *
+
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number1");
+		int num=sc.nextInt();
+        sc.close();
+   
+        for(int i=num;i>=1;i--) {
+        
+        for(int j=1;j<=num-i;j++) {
+        	System.out.print(" ");
+        }
+        for(int j=1;j<=2*i-1;j++) {
+        	System.out.print("*");
+	
+        }
+        
+           System.out.println();
+           }}}
+
+
+// Reverse Number Triangle pattern
+
+1 2 3 4 5 6 
+ 2 3 4 5 6 
+  3 4 5 6 
+   4 5 6 
+    5 6 
+     6 
+
+
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number1");
+		int num=sc.nextInt();
+        sc.close();
+   
+        for(int i=1;i<=num;i++) {
+        for(int j=1;j<i;j++) {
+        	System.out.print(" ");
+	
+        }
+        for(int j=i;j<=num;j++) {
+        	System.out.print(j+" ");
+
+        }
+           System.out.println();
+           }}}
+
+// Mirror image Triangle pattern
+
+1 2 3 4 5 6 
+ 2 3 4 5 6 
+  3 4 5 6 
+   4 5 6 
+    5 6 
+     6 
+    5 6 
+   4 5 6 
+  3 4 5 6 
+ 2 3 4 5 6 
+1 2 3 4 5 6 
+
+
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number1");
+		int num=sc.nextInt();
+        sc.close();
+   
+        for(int i=1;i<=num;i++) {
+        for(int j=1;j<i;j++) {
+        	System.out.print(" ");
+	
+        }
+        for(int j=i;j<=num;j++) {
+        	System.out.print(j+" ");
+
+        }
+        System.out.println();
+
+        }
+        for(int i=num-1;i>=1;i--) {
+            for(int j=1;j<i;j++) {
+            	System.out.print(" ");
+    	
+            }
+            for(int j=i;j<=num;j++) {
+            	System.out.print(j+" ");
+
+            }
+           System.out.println();
+           }}}
+
+// Right Pascal's Triangle pattern
+
+
+*
+**
+***
+****
+*****
+******
+*****
+****
+***
+**
+*
+
+
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number1");
+		int num=sc.nextInt();
+        sc.close();
+   
+        for(int i=1;i<=num;i++) {
+        for(int j=1;j<=i;j++) {
+        	System.out.print("*");
+	
+        }
+        
+        System.out.println();
+
+        }
+        for(int i=num-1;i>=1;i--) {
+            for(int j=1;j<=i;j++) {
+            	System.out.print("*");
+	}
+            System.out.println();
+
+        }}}
+
+// K pattern
+
+
+******
+*****
+****
+***
+**
+*
+**
+***
+****
+*****
+******
+
+package Utility;
+
+import java.util.Scanner;
+
+public class Java_Code_Program {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number1");
+		int num=sc.nextInt();
+        sc.close();
+   
+        
+        for(int i=num;i>=1;i--) {
+            for(int j=1;j<=i;j++) {
+            	System.out.print("*");
+	}
+            System.out.println();
+
+            }
+            for(int i=2;i<=num;i++) {
+                for(int j=1;j<=i;j++) {
+                	System.out.print("*");
+                }
+            System.out.println();
+
+        }}}
