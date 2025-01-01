@@ -1,0 +1,210 @@
+// 1) write a Program to print all Natural numbers from 1 to n Using for loop
+package Java_Practice;
+import java.util.Scanner;
+public class Java_Practice {
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter any number");
+	int num=sc.nextInt();
+	for(int i=1;i<=num;i++) {
+  
+    	System.out.println(i);
+    }
+}}
+//2)  write a Program to print all even numbers from 1 to 100  Using for loop
+package Java_Practice;
+import java.util.Scanner;
+public class Java_Practice {
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter any number");
+	int num=sc.nextInt();
+	for(int i=1;i<=num;i++) {
+	 if(i%2==0)
+  	System.out.println(i);
+    }
+}}
+
+//3)  write a Program to print all odd numbers from 1 to 100  Using for loop
+package Java_Practice;
+import java.util.Scanner;
+public class Java_Practice {
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter any number");
+	int num=sc.nextInt();
+	for(int i=1;i<=num;i++) {
+	 if(i%2!=0)
+  	System.out.println(i);
+    }
+}}
+// 4)  write a Program to print sum of all even numbers from 1 to 100  Using for loop
+package Java_Practice;
+import java.util.Scanner;
+public class Java_Practice {
+public static void main(String[] args) {
+	int sum=0;
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter any number");
+	int num=sc.nextInt();
+	for(int i=1;i<=num;i++) {
+	 if(i%2==0) {
+		 sum+=i;
+	 }}
+  	System.out.println(sum);
+    }
+}
+// 5)  write a Program to print sum of all odd numbers from 1 to 100  Using for loop
+package Java_Practice;
+import java.util.Scanner;
+public class Java_Practice {
+public static void main(String[] args) {
+	int sum=0;
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter any number");
+	int num=sc.nextInt();
+	for(int i=1;i<=num;i++) {
+	 if(i%2!=0) {
+		 sum+=i;
+	 }}
+  	System.out.println(sum);
+    }
+}
+
+// 6)  write a Program to print multiplication of any number using for loop
+package Java_Practice;
+import java.util.Scanner;
+public class Java_Practice {
+public static void main(String[] args) {
+	int mul=0;
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter any number");
+	int num=sc.nextInt();
+	for(int i=1;i<=num;i++) {
+		mul= num*i;
+
+  	System.out.println(mul);
+    }
+}}
+
+
+// 7)  write a Program to count the digit of a given number using for loop
+package Java_Practice;
+import java.util.Scanner;
+public class Java_Practice {
+public static void main(String[] args) {
+	int count=0;
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter any number");
+	int num=sc.nextInt();
+	// To handle negative numbers, work with the absolute value of the number
+	        num = Math.abs(num);
+  // Use a for loop to count digits by dividing the number by 10
+	     for (int temp = num; temp > 0; temp /= 10) {
+	            count++;  // Each time we divide, increment the count (each digit)
+	        }
+	        
+	        // Special case: If the number is 0, it has exactly 1 digit
+	        if (num == 0) {
+	            count = 1;
+	        }
+	        
+	        System.out.println("The number has " + count + " digits.");
+	    }
+	}
+// 8)  write a Program to print the sum of digit of a given number using for loop
+package Java_Practice;
+import java.util.Scanner;
+
+public class Java_Practice {
+    public static void main(String[] args) {
+        int sum = 0;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter any number:");
+        int num = sc.nextInt();
+
+        // Use a for loop to sum the digits of the number
+        for (int temp = num; temp != 0; temp /= 10) {
+            sum += temp % 10;  // Add the last digit to sum
+        }
+
+        System.out.println("The sum of the digits is: " + sum);
+    }
+}
+
+// 9)  write a Program to print all natural numbers in reverse order using for loop
+package Java_Practice;
+import java.util.Scanner;
+
+public class Java_Practice {
+    public static void main(String[] args) {
+       
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter any number:");
+        int num = sc.nextInt();
+        for(int i=num;i>=1;i--) {
+        	System.out.println(i+" ");
+        }
+        sc.close();
+
+    }}
+// 10)  write a Program to check given number is Prime or not using for loop
+package Java_Practice;
+import java.util.Scanner;
+
+public class Java_Practice {
+    public static void main(String[] args) {
+       
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter any number:");
+        int num = sc.nextInt();
+        int count=0;
+        for(int i=1;i<=num/2;i++) {
+        	if(num%2==0) {
+        		count++;
+        	}}
+        if(count==0) {
+        	System.out.println("The number is prime number");
+        }else {
+        	System.out.println("The number is not prime number");
+        }}}
+
+// 11)  write a Program to print all Prime numbers between 1 to n using for loop
+package Java_Practice;
+import java.util.Scanner;
+
+public class Java_Practice {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Ask the user for the upper limit (n)
+        System.out.println("Enter a number (n) to find all prime numbers between 1 and n:");
+        int n = sc.nextInt();
+
+        // Loop through numbers from 2 to n
+        System.out.println("Prime numbers between 1 and " + n + " are:");
+
+        for (int num = 2; num <= n; num++) {
+            boolean isPrime = true;  // Assume the number is prime initially
+
+            // Check if num is divisible by any number from 2 to sqrt(num)
+            for (int i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i == 0) {
+                    isPrime = false;  // num is divisible by i, so it's not prime
+                    break;  // No need to check further divisors
+                }
+            }
+
+            // If num is prime, print it
+            if (isPrime) {
+                System.out.print(num + " ");
+            }
+        }
+
+        // Close the scanner
+        sc.close();
+    }
+}
